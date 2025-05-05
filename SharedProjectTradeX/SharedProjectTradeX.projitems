@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7ba21967-0fbb-455e-96d0-aeba3146512e</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SharedProjectTradeX</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ApiException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Client.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HttpService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyGlobal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Parameters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PathBundle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\CancelAllorder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\CancelGTTOrderData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\CancelOrder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\ConvertPosition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\ExchangeStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\ExecuteBasketModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\ExposuresModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\FundsReportModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\GTTOrdersBookModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\GttOrderState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\GTTTradesBookModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\HoldingsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\LoginModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\LogoutResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\MarginCalculatorModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\MarginsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\ModifyGTTOrderData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\ModifyOrder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\ModifyProduct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\NetPositionsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\NewOrderModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\OrderBookModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\OrderHistoryModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\OrderStatusModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\StatusModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\TradesBookModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TradeXModels\UserProfileModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebSocketService.cs" />
+  </ItemGroup>
+</Project>
